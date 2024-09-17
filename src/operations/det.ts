@@ -1,5 +1,7 @@
+import isSquare from "../shape/isSquare";
+
 export default function determinant (matrix) {
-  if (matrix.length !== matrix[0].length) return null;
+  if (!isSquare(matrix)) return null;
 
   const size = matrix.length;
 
